@@ -1,5 +1,7 @@
+from .dark_spellbook import dark_spell_allowed_ingredients
+
+
 def validate_ingredients(ingredients: str) -> str:
-    from .dark_spellbook import dark_spell_allowed_ingredients
     allowed: list = dark_spell_allowed_ingredients()
     test = [i.lower().strip() for i in ingredients.split(",")]
     done = False
